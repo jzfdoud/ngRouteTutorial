@@ -1,0 +1,16 @@
+<p>help-detail works!</p>
+<div [ngSwitch]="topic">
+    <div *ngSwitchCase="'home'">
+        <h3>This is help for home</h3>
+    </div>
+    <div *ngSwitchCase="'about'">
+        <h3>This is help for about</h3>
+    </div>
+    <div *ngSwitchCase="'revision'">
+        <h3>This is help for revision</h3>
+    </div>
+    <div *ngSwitchCase="'help'">
+        <h3>This is help for help</h3>
+    </div>
+</div>
+<p>Topic is {{topic}}</p>
